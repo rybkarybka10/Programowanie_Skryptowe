@@ -1,0 +1,4 @@
+grades
+Kowalski_Jan+=Matematyka(3.0, 5.0)|Fizyka(5.0) Nowak_Anna+=Matematyka(3.5)
+grades
+Kowalski_Jan-=Matematyka(1, 5)|WF(1)
