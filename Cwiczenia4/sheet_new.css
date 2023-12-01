@@ -1,0 +1,114 @@
+
+.azure {
+    background-color: #EFF;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 1.3vw;
+}
+
+/* zmiana koloru tekstu */
+:root {
+    --text-color-initial: black;
+    --text-color-final: lightgreen;
+  }
+
+  @keyframes zmien_kolor {
+    0% {
+      color: var(--text-color-initial);
+    }
+    50% {
+      color: var(--text-color-final);
+    }
+    100% {
+      color: var(--text-color-initial);
+    }
+  }
+  
+  h1 {
+    animation: zmien_kolor 3s infinite;
+  }
+
+@media screen and (min-width: 1000px){
+    .azure {
+    background-color: #EFF;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* zrobione */
+aside  {
+    display: grid;
+    grid-template-columns: 400px;
+    float: right;
+    margin-top: 16px;
+    padding-left: 20px;
+    width: 400px;
+}
+
+/* zrobione */
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+} 
+
+/* zrobione */
+header {
+    padding-left: 20px;
+}     
+
+/* zrobione */
+main { 
+    display: grid;
+    grid-template-columns: 400px;
+    margin-right: 10px;
+    padding-left: 20px;
+    width: 400px
+}
+
+/* zrobione */
+nav {
+    display: grid;
+    grid-template-columns: 100px;
+    width: 100px;
+}
+
+/* zrobione */
+nav ul {
+    display: grid;
+    grid-template-columns: 100px;
+    width: 80px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* zmiana koloru tekstu */
+:root {
+    --text-color-initial: black;
+    --text-color-final: lightgreen;
+  }
+
+  @keyframes zmien_kolor {
+    0% {
+      color: var(--text-color-initial);
+    }
+    50% {
+      color: var(--text-color-final);
+    }
+    100% {
+      color: var(--text-color-initial);
+    }
+  }
+  
+  h1 {
+    animation: zmien_kolor 3s infinite;
+  }
+}

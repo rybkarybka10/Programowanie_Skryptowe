@@ -1,0 +1,325 @@
+
+nav {
+  align-items: center;
+  background-color: bisque;
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
+  z-index: 100;
+  position: relative;
+
+}
+.search {
+  width: 85%;
+}
+
+/*slider*/
+
+#slider {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+
+}
+#slider input[type=radio] {
+  display: none;
+}
+#slider label {
+  cursor:pointer;
+  text-decoration: none;
+
+}
+#slides {
+  padding: 10px;
+  background: grey;
+  position: relative;
+  z-index: 1;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 300px;
+}
+#slides .slide {
+  width: 25%;
+  float:left;
+  display: flex;
+  justify-content: center;
+  text-align: top;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+#slides .slide_1 {
+background: grey;
+display: grid;
+grid-template-columns: 100px 1fr 100px;
+}
+
+#controls {
+  margin: -180px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+}
+#controls label:hover {
+  opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  float:right;
+  margin: 0 -50px 0 0;
+  display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  float:left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label {
+display: inline-block;
+width: 50px;
+height: 5px;
+background: rgb(179, 179, 179);
+}
+#bullets label:hover{
+background: white;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+background: #444;
+}
+#slides {
+max-width: calc(100% - 140px);
+margin: 0 auto;
+}
+
+
+/*end_slider*/
+
+
+main {
+margin: 20px;
+}
+
+.main_div {
+border-radius: 4px;
+font-size: smaller;
+padding: 10px;
+}
+
+footer {
+background-color: bisque;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+display: grid;
+grid-template-columns: 2fr 2fr 1fr;
+}
+
+a {
+color: rgb(0, 183, 255);
+}
+
+@media screen and (min-width: 1000px){
+
+  nav {
+      align-items: center;
+      background-color: bisque;
+      height: 50px;
+      display: grid;
+      grid-template-columns: auto 1fr 2fr auto;
+      margin-bottom: 10px;
+      z-index: 100;
+      position: relative;
+  }
+.search{
+  width: 50%;
+}
+
+  /*slider*/
+  
+  #slider {
+      margin: 0 auto;
+      max-width: 100%;
+      text-align: center;
+  }
+  #slider input[type=radio] {
+      display: none;
+  }
+  #slider label {
+      cursor:pointer;
+      text-decoration: none;
+
+  }
+  #slides {
+      padding: 10px;
+      background: grey;
+      position: relative;
+      z-index: 1;
+  }
+  #overflow {
+      width: 100%;
+      overflow: hidden;
+  }
+  #slide1:checked ~ #slides .inner {
+      margin-left: 0;
+  }
+  #slide2:checked ~ #slides .inner {
+      margin-left: -100%;
+  }
+  #slide3:checked ~ #slides .inner {
+      margin-left: -200%;
+  }
+  #slide4:checked ~ #slides .inner {
+      margin-left: -300%;
+  }
+  #slides .inner {
+      transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+      width: 400%;
+      line-height: 0;
+      height: 300px;
+  }
+  #slides .slide {
+      width: 25%;
+      float:left;
+      display: flex;
+      justify-content: center;
+      text-align: top;
+      align-items: center;
+      height: 100%;
+      color: #fff;
+  }
+  #slides .slide_1 {
+    background: grey;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
+
+  #controls {
+      margin: -180px 0 0 0;
+      width: 100%;
+      height: 50px;
+      z-index: 3;
+      position: relative;
+  }
+  #controls label {
+      transition: opacity 0.2s ease-out;
+      display: none;
+      width: 50px;
+      height: 50px;
+      opacity: .4;
+  }
+  #controls label:hover {
+      opacity: 1;
+  }
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(4),
+  #slide4:checked ~ #controls label:nth-child(1) {
+      background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+      float:right;
+      margin: 0 -50px 0 0;
+      display: block;
+  }
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide2:checked ~ #controls label:nth-last-child(3),
+  #slide3:checked ~ #controls label:nth-last-child(4),
+  #slide4:checked ~ #controls label:nth-last-child(1) {
+      background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+      float:left;
+      margin: 0 0 0 -50px;
+      display: block;
+  }
+  #bullets {
+      margin: 150px 0 0;
+      text-align: center;
+  }
+  #bullets label {
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background: rgb(179, 179, 179);
+  }
+  #bullets label:hover{
+    background: white;
+  }
+  #slide1:checked ~ #bullets label:nth-child(1),
+  #slide2:checked ~ #bullets label:nth-child(2),
+  #slide3:checked ~ #bullets label:nth-child(3),
+  #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+  }
+  #slides {
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
+  }
+
+  
+  /*end_slider*/
+
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+  }
+  
+  .main_div {
+    border-radius: 4px;
+    font-size: smaller;
+    padding: 10px;
+  }
+
+  footer {
+    background-color: bisque;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
+  a {
+    color: rgb(0, 183, 255);
+  }
+
+}

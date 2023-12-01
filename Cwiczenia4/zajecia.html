@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style_zajecia.css">
+    <title>  Wyższa Szkoła Informatyki </title>
+  </head>
+  <body>
+
+    <nav class="w3-padding-small">
+        <div>
+          <i class="fa-solid fa-graduation-cap"></i>
+            <h7> Wyższa Szkoła Informatyki </h7>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button mobile_studia">Studia <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-border w3-round">
+            <a href="#" class="w3-bar-item w3-button"> Stacjonarne </a>
+            <a href="#" class="w3-bar-item w3-button"> Niestacjonarne </a>
+            <a href="#" class="w3-bar-item w3-button w3-border-top"> Informatyka </a>
+            <a href="#" class="w3-bar-item w3-button"> Webmastering </a>
+          </div>
+        </div>
+        <div class="nav_div">
+            <input class="search" type="text", placeholder="Szukaj">
+            <button class="w3-button w3-border w3-tiny"> Szukaj</button>
+        </div>
+        <div>
+            USOS
+        </div>
+    </nav>
+
+
+    <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+      <div id="slides">
+         <div id="overflow">
+            <div class="inner">
+               <div class="slide slide_1">
+                <div>
+                  <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                </div>
+                  <div>
+                     <h3> Studia z przyszłością </h3>
+                     <img src="photos/studia_z_przyszloscia.png" style="width: 350px; height: 220px;padding: 20px;" >
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                  </div>
+                </div>
+
+               <div class="slide slide_1">
+                <div>
+                  <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                </div>
+                  <div class="slide-content">
+                     <h3> Aplikuj już dziś </h3>
+                     <img src="photos/nie_spij.png" style="width: 350px; height: 220px;padding: 20px;" >
+                     <p>Nie śpij, bo Cię inni ubiegną</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                  </div>
+               </div>
+
+               <div class="slide slide_1">
+                <div>
+                  <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                </div>
+                  <div class="slide-content">
+                     <h3> Promocja </h3>
+                     <br> <br>
+                     <p> Pierwszy semestr za darmo dla losowych 10 osób </p>
+                     <img src="photos/szary.png" style="width: 350px; height: 220px;padding: 20px;" >
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                  </div>
+               </div>
+              </div>
+               
+            </div>
+            <div id="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+           </div>
+           <div id="bullets">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+           </div>
+         </div>
+      </div>
+   </div>
+
+
+    <main>
+
+        <div class="main_div w3-border w3-margin" style="background-color: rgb(197, 132, 132);">
+          <div class="w3-border-bottom w3-padding-small" style="font-size: smaller;">
+            Oferty zatrudnienia
+          </div>
+          <img src="photos/oferty_zatrudnienia.png" class="w3-image" style="padding-top: 10px;">
+          <br>
+          <i class="fa-solid fa-circle fa-2xs" style="padding-left: 15px;"></i> <a href="" style="font-size: smaller;" >Google </a>
+          <br>
+          <i class="fa-solid fa-circle fa-2xs" style="padding-left: 15px;"></i> <a href="" style="font-size: smaller;" >IBM </a>
+          <br>
+          <button class="w3-button w3-blue w3-margin" style="font-size: smaller; border-radius: 4px;">Pozostałe oferty</button>
+        </div>
+
+        <div class="main_div w3-border w3-margin" style="background-color: rgb(107, 179, 107);">
+          <div class="w3-border-bottom w3-padding-small" style="font-size: smaller;">
+            Kierunki
+          </div>
+          <img src="photos/kierunki.png" class="w3-image " style="padding-top: 10px;">
+
+          <div class="w3-row" style="margin-top: 10px;">
+            <div class="w3-col s6" style="padding-left: 10px; background-color: green;"><p>Kierunek</p></div>
+            <div class="w3-col s6" style="padding-left: 10px; background-color: green;"><p>Czesne</p></div>
+          </div>
+          <div class="w3-row">
+            <div class="w3-col s6" style="padding-left: 10px; background-color: rgb(77, 138, 77);"><p>Informatyka</p></div>
+            <div class="w3-col s6" style="padding-left: 10px; background-color: rgb(77, 138, 77);"><p>4000 zł/semestr</p></div>
+          </div>
+          <div class="w3-row">
+            <div class="w3-col s6" style="padding-left: 10px;"><p>Webmastering</p></div>
+            <div class="w3-col s6" style="padding-left: 10px;"><p>3500 zł/semestr</p></div>
+          </div>
+
+        </div>
+
+        <div class="main_div w3-border w3-margin" style="background-color: rgb(167, 206, 221);">
+          <div class="w3-border-bottom w3-padding-small" style="font-size: smaller;">
+            Zaplecze dydaktyczne
+          </div>
+          <img src="photos/zaplecze_dydaktyczne.png" class="w3-image" style="padding-top: 10px;">
+          <br>
+          Budynek został wyposażony w wysokiej klasy systemy telekonferencyjne. W czterech salach zostały zainstalowane urządzenia 
+          (C40 oraz C60) firmy TANDBERG umożliwiające przetwarzanie, kodowanie i przesyłanie obrazu w rozdzielczości 1080HD. W jednej
+          z sal zainstalowano system Telepresence Dual 52".
+        </div>
+
+    </main>
+
+    <footer class="w3-padding-small">
+      <div>
+        <h7><b> Adres siedziby: </b></h7> <br>
+        Wyższa Szkoła Informatyki <br>
+        ul. Jana Bieleckiego 1 <br>
+        30-836 Kraków
+      </div>
+      <div>
+        <h7><b> Kontakt: </b></h7> <br>
+        <i class="fa-solid fa-envelope-circle-check"></i> <a href=""> dziekanat@wsi.krakow.pl</a> <br>
+        <i class="fa-solid fa-mobile-screen-button"></i> <a href="" > +48 555-123-456 </a>
+      </div>
+      <div class="w3-display-container-">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </footer>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
